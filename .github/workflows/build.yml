@@ -20,12 +20,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install system dependencies
         run: sudo apt-get install -y tree
-      - name: Update submodule
-          working-directory: builder_scripts
-          run: |
-            git submodule update --init
-            git checkout main
-            git pull
       - name: Set up QEMU
         if: matrix.platform != 'linux/amd64'
         uses: docker/setup-qemu-action@v2
@@ -42,7 +36,7 @@ jobs:
           --workdir "/src/${{ github.repository }}/pkgbuilds"
           --entrypoint "/src/${{ github.repository }}/pkgbuilds/with-builder-user"
           ghcr.io/fwcd/archlinux
-          ./builder_scripts/build-pkgs
+          ./build-pkgs
       - name: Build package database
         run: >
           docker run
@@ -51,7 +45,7 @@ jobs:
           --mount type=bind,src="$PWD",dst="/src/${{ github.repository }}"
           --workdir "/src/${{ github.repository }}/pkgbuilds"
           ghcr.io/fwcd/archlinux
-          ./builder_scripts/build-db
+          ./build-db
       - name: Output build trees for debugging
         run: |
           echo "==> Build tree"
