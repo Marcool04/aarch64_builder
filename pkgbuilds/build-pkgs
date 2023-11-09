@@ -30,6 +30,11 @@ for pkg in "${pkgs[@]}"; do
     echo "Which contains:"
     ls -la
 
+    awk '/validpgpkeys/ {print $3}' .SRCINFO | \
+      xargs gpg --keyserver keyserver.ubuntu.com --recv-key
+
+    find ./keys/ -type f -name '*' -exec gpg --import {} \;
+
     # Build the package (and compress later to speed things up under emulation)
     if PKGDEST="$builddir" PKGEXT='.pkg.tar' makepkg -si --noconfirm --nocheck; then
       echo "$pkg built successfully"
