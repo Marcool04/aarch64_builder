@@ -1,6 +1,10 @@
 # Arch Sink (aarch64)
 
-[![Release](https://img.shields.io/github/v/release/archsink/aarch64)](https://github.com/archsink/aarch64/releases/latest)
-[![Build](https://github.com/archsink/aarch64/actions/workflows/build.yml/badge.svg)](https://github.com/archsink/aarch64/actions/workflows/build.yml)
+[![Release](https://img.shields.io/github/v/release/Marcool04/aarch64_builder)](https://github.com/Marcool04/aarch64_builder/releases/latest)
+[![Build](https://github.com/Marcool04/aarch64_builder/actions/workflows/build.yml/badge.svg)](https://github.com/Marcool04/aarch64_builder/actions/workflows/build.yml)
 
-aarch64 builds of the packages from [`pkgbuilds`](https://github.com/archsink/pkgbuilds).
+aarch64 builds of a selection of archlinux packages.
+
+Uses scripts repository as a submodule in  [`builder_scripts`](https://github.com/Marcool04/pkgbuilds).
+
+See `pkgbuils` for each package's folder.
