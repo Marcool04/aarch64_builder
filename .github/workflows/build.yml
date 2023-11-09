@@ -18,8 +18,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Install system dependencies
-        run: sudo apt-get install -y tree
       - name: Update submodule
         working-directory: builder_scripts
         run: |
@@ -52,12 +50,6 @@ jobs:
           --workdir "/src/${{ github.repository }}/pkgbuilds"
           ghcr.io/fwcd/archlinux
           /src/${{ github.repository }}/builder_scripts/build-db
-      - name: Output build trees for debugging
-        run: |
-          echo "==> Build tree"
-          tree /src/${{ github.repository }}/pkgbuilds/build
-          echo "==> Database tree"
-          tree /src/${{ github.repository }}/pkgbuilds/db
       - name: Set up Git config
         run: |
           git config --global user.name "github-actions[bot]"
