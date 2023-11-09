@@ -21,11 +21,11 @@ jobs:
       - name: Install system dependencies
         run: sudo apt-get install -y tree
       - name: Update submodule
-          working-directory: builder_scripts
-          run: |
-            git submodule update --init
-            git checkout main
-            git pull
+        working-directory: builder_scripts
+        run: |
+          git submodule update --init
+          git checkout main
+          git pull
       - name: Set up QEMU
         if: matrix.platform != 'linux/amd64'
         uses: docker/setup-qemu-action@v2

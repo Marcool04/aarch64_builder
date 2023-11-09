@@ -3,4 +3,3 @@ moarvm
 nqp
 rakudo
 netdata-go-plugins
-
