@@ -42,7 +42,7 @@ jobs:
           --workdir "/src/${{ github.repository }}/pkgbuilds"
           --entrypoint "/src/${{ github.repository }}/pkgbuilds/with-builder-user"
           ghcr.io/fwcd/archlinux
-          ./builder_scripts/build-pkgs
+          /src/${{ github.repository }}/builder_scripts/build-pkgs
       - name: Build package database
         run: >
           docker run
@@ -51,13 +51,13 @@ jobs:
           --mount type=bind,src="$PWD",dst="/src/${{ github.repository }}"
           --workdir "/src/${{ github.repository }}/pkgbuilds"
           ghcr.io/fwcd/archlinux
-          ./builder_scripts/build-db
+          /src/${{ github.repository }}/builder_scripts/build-db
       - name: Output build trees for debugging
         run: |
           echo "==> Build tree"
-          tree pkgbuilds/build
+          tree /src/${{ github.repository }}/pkgbuilds/build
           echo "==> Database tree"
-          tree pkgbuilds/db
+          tree /src/${{ github.repository }}/pkgbuilds/db
       - name: Set up Git config
         run: |
           git config --global user.name "github-actions[bot]"
@@ -75,4 +75,4 @@ jobs:
         run: |
           tag="$(date '+%Y-%m-%d-%H-%M')"
           gh release create --title "$tag" "$tag" || true
-          gh release upload --clobber "$tag" pkgbuilds/db/*
+          gh release upload --clobber "$tag" /src/${{ github.repository }}/pkgbuilds/db/*
