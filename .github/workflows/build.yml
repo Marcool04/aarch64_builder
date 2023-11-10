@@ -38,7 +38,7 @@ jobs:
           --platform "${{ matrix.platform }}"
           --mount type=bind,src="$PWD",dst="/src/${{ github.repository }}"
           --workdir "/src/${{ github.repository }}/pkgbuilds"
-          --entrypoint "/src/${{ github.repository }}/pkgbuilds/with-builder-user"
+          --entrypoint "/src/${{ github.repository }}/builder_scripts/with-builder-user"
           ghcr.io/fwcd/archlinux
           /src/${{ github.repository }}/builder_scripts/build-pkgs
       - name: Build package database
