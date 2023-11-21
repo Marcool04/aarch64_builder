@@ -3,6 +3,8 @@ name: Build
 on:
   push:
   workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
 
 permissions:
   contents: write
@@ -25,7 +27,6 @@ jobs:
           git checkout main
           git pull
       - name: Set up QEMU
-        if: matrix.platform != 'linux/amd64'
         uses: docker/setup-qemu-action@v2
         with:
           platforms: ${{ matrix.platform }}
