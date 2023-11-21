@@ -1,24 +1,15 @@
 [submodule "builder_scripts"]
 	path = builder_scripts
 	url = https://github.com/Marcool04/pkgbuilds.git
-[submodule "pkgbuilds/moarvm"]
-	path = pkgbuilds/moarvm
-	url = https://aur.archlinux.org/moarvm.git
 [submodule "pkgbuilds/netdata-go-plugins"]
 	path = pkgbuilds/netdata-go-plugins
 	url = https://aur.archlinux.org/netdata-go-plugins.git
 [submodule "pkgbuilds/bash-complete-alias"]
 	path = pkgbuilds/bash-complete-alias
 	url = https://aur.archlinux.org/bash-complete-alias.git
-[submodule "pkgbuilds/rakudo"]
-	path = pkgbuilds/rakudo
-	url = https://aur.archlinux.org/rakudo.git
 [submodule "pkgbuilds/paru-bin"]
 	path = pkgbuilds/paru-bin
 	url = https://aur.archlinux.org/paru-bin.git
-[submodule "pkgbuilds/nqp"]
-	path = pkgbuilds/nqp
-	url = https://aur.archlinux.org/nqp.git
 [submodule "pkgbuilds/tio"]
 	path = pkgbuilds/tio
 	url = https://aur.archlinux.org/tio.git
