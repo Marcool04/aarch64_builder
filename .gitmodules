@@ -16,3 +16,12 @@
 [submodule "pkgbuilds/journalwatch"]
 	path = pkgbuilds/journalwatch
 	url = https://aur.archlinux.org/journalwatch.git
+[submodule "pkgbuilds/moarvm"]
+	path = pkgbuilds/moarvm
+	url = https://aur.archlinux.org/moarvm.git
+[submodule "pkgbuilds/rakudo"]
+	path = pkgbuilds/rakudo
+	url = https://aur.archlinux.org/rakudo.git
+[submodule "pkgbuilds/nqp"]
+	path = pkgbuilds/nqp
+	url = https://aur.archlinux.org/nqp.git
