@@ -1,3 +1,51 @@
 [submodule "builder_scripts"]
 	path = builder_scripts
 	url = https://github.com/Marcool04/pkgbuilds.git
+[submodule "pkgbuild/paru-bin"]
+	path = pkgbuild/paru-bin
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/paru-bin
+[submodule "pkgbuild/netdata-go-plugins"]
+	path = pkgbuild/netdata-go-plugins
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/netdata-go-plugins
+[submodule "pkgbuild/journalwatch"]
+	path = pkgbuild/journalwatch
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/journalwatch
+[submodule "pkgbuild/moarvm"]
+	path = pkgbuild/moarvm
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/moarvm
+[submodule "pkgbuild/bash-complete-alias"]
+	path = pkgbuild/bash-complete-alias
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/bash-complete-alias
+[submodule "pkgbuild/rakudo"]
+	path = pkgbuild/rakudo
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/rakudo
+[submodule "pkgbuild/nqp"]
+	path = pkgbuild/nqp
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/nqp
+[submodule "pkgbuild/tio"]
+	path = pkgbuild/tio
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/tio
+[submodule "pkgbuilds/moarvm"]
+	path = pkgbuilds/moarvm
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/moarvm
+[submodule "pkgbuilds/journalwatch"]
+	path = pkgbuilds/journalwatch
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/journalwatch
+[submodule "pkgbuilds/netdata-go-plugins"]
+	path = pkgbuilds/netdata-go-plugins
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/netdata-go-plugins
+[submodule "pkgbuilds/bash-complete-alias"]
+	path = pkgbuilds/bash-complete-alias
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/bash-complete-alias
+[submodule "pkgbuilds/rakudo"]
+	path = pkgbuilds/rakudo
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/rakudo
+[submodule "pkgbuilds/paru-bin"]
+	path = pkgbuilds/paru-bin
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/paru-bin
+[submodule "pkgbuilds/nqp"]
+	path = pkgbuilds/nqp
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/nqp
+[submodule "pkgbuilds/tio"]
+	path = pkgbuilds/tio
+	url = /home/mark/Software/archlinux_github_builder/aarch64_builder_pkgbuilds/tio
